@@ -1,5 +1,5 @@
 controllers:
     resource:
-        path: ../src/Controller/
+        path: ../templates/main/index.html.twig #../src/Controller/
         namespace: App\Controller
     type: attribute
