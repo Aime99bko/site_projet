@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Page Title{% endblock %}</title>
+    {% block stylesheets %}
+    <link rel="stylesheet" href="/css/style.css">
+    {% endblock %}
+</head>
+<body>
+    <include src="./includes/header.html.twig></include>
+    <main>
+        {% block content %}
+        <p>This is the main content area.</p>
+        {% endblock %}
+    </main>
+   <include src="./includes/footer.html.twig></include>
+    {% block javascripts %}
+    <script src="/js/script.js"></script>
+    {% endblock %}
+</body>
+</html>
